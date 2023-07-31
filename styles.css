@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #381606; /* Your unique color background */
+    color: #ffffff; /* Font color for the quote and author */
+    margin: 0;
+  }
+
+.wrapper{
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+  
+.quote-container {
+    /* text-align: center;
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #172a45;
+    box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5); */
+    justify-content: center;
+    width: 120%;
+    background-color: #4d2905;
+    padding: 40px 40px;
+    box-shadow: 0 20px 65px rgba(237, 233, 233, 0.3);
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+}
+.quote-container i:first-child{
+  margin: 3px 10px 0 0;
+}
+.quote-container i:last-child{
+  display: flex;
+  margin: 0 0 3px 10px ;
+}
+.quote-container:after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: #fff;
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+}
+  
+.quote-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    word-break:break-all;
+
+  }
+  
+.quote-author {
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    justify-content: flex-end;
+    
+  }
+.quote-author span:first-child{
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+.buttons{
+  border-top: 1px solid #fff;
+}
+.buttons .features{
+  display: flex;
+  align-items: center;
+  margin-top:20px;
+
+  justify-content: space-between;
+
+}
+.features ul{
+  display: flex;
+}
+.features ul li{
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;   
+}
+.features ul li:hover{
+  color: #2c3e50;
+  background: #fff;
+}
+.features button{
+    border: none;
+    outline: none;
+    color: #603506;
+    cursor: pointer;
+    font-style: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: #2c3e50;
+   /* background: #5372F0;*/
+}
+#generateButton {
+    padding: 10px 20px;
+    background-color: #6f3c05;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  #generateButton:hover {
+     background-color: #34495e;
+  }
